@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 0;
+            width: 0;
+            border: 50px solid transparent;
+            border-top-color: red;
+        }
+        
+        .box1 {
+            height: 0;
+            width: 0;
+            border-top: 50px solid red;
+            border-left: 50px solid pink;
+            border-bottom: 50px solid green;
+            border-right: 50px solid blue;
+        }
+        /* 京东的盒子 */
+        
+        .box2 {
+            position: relative;
+            margin-left: 200px;
+            width: 200px;
+            height: 300px;
+            background-color: skyblue;
+        }
+        
+        .box3 {
+            position: absolute;
+            right: 5px;
+            margin-top: -20px;
+            height: 0;
+            width: 0;
+            border: 10px solid transparent;
+            border-bottom-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=box></div>
+    <div class=box1></div>
+    <div class=box2>
+        <div class=box3></div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.list-l {
+    float: left;
+}
+
+.list-l li {
+    float: left;
+}
+
+.list-l li a {
+    display: block;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.list-r {
+    float: left;
+}
+
+.list-r ul li {
+    float: left;
+}
+
+.list-r li a {
+    display: block;
+    line-height: 45px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.list-r ul li:last-child a::after {
+    font-family: 'icomoon';
+    content: '\e91e';
+}
+
+.list-content-bd ul li {
+    overflow: hidden;
+    float: left;
+    height: 460px;
+    width: 290px;
+    margin-right: 13px;
+}
+
+.list-content-bd ul li:hover {
+    border: 1px solid red;
+}
+
+.list-content-bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.copyright {
+    line-height: 20px;
+}

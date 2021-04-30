@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500" height="250">
+        <!-- 这些属性只能在table里面写，比如左对齐left，右对齐right，居中cente;如果不打，会默认左对齐和没有边框-->
+        <!-- cellpadding是表格与单元格里面字的距离，不写默认为1；cellspacing是单元格与单元格的距离，不写默认为2 -->
+        <thead>
+            <!-- 注意<thead>与<th>不一样，<thead>是表示第一行为头部，且内部必须要有<tr>;而<th>是第一行中每个单元格 -->
+            <tr>
+                <!-- <th></th>为表头边框 -->
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tbody>用于表格的主题，主要于存放数据 -->
+            <tr>
+                <td>张三</td>
+                <td>男</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>女</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>男</td>
+                <td>31</td>
+            </tr>
+            <!-- 也可以图片链接，超链接但必须要在单元格里面执行如
+        <tr>
+            <td>王五</td>
+            <td><img src="qq.jpg" /></td>
+            <td><a href="#"></ a></td>
+        </tr> -->
+        </tbody>
+    </table>
+</body>
+
+</html>

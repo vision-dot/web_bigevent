@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 0;
+            height: 0;
+            border-color: transparent red transparent transparent;
+            border-width: 100px 50px 0 0;
+            border-style: solid;
+        }
+        
+        .price {
+            border: 1px solid red;
+            width: 200px;
+            height: 50px;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 50px;
+        }
+        
+        .pre {
+            float: left;
+            position: relative;
+            width: 100px;
+            height: 100%;
+            background-color: red;
+            color: #ccc;
+            font-weight: 700;
+        }
+        
+        .elp {
+            color: gray;
+            text-decoration: line-through;
+        }
+        
+        .pre .xiaosanjiao {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-width: 50px 20px 0 0;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="price">
+        <span class="pre">$1688
+            <i class="xiaosanjiao"></i>
+        </span>
+        <span class="elp">$6888</span>
+    </div>
+</body>
+
+</html>

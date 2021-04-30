@@ -1,0 +1,166 @@
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    header {
+        height: 84px;
+        border-bottom: 2px solid #c81523;
+    }
+    
+    .logo {
+        padding-top: 18px;
+    }
+    
+    .registerarea {
+        height: 522px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+    }
+    
+    .registerarea h3 {
+        height: 42px;
+        border-bottom: 1px solid #ccc;
+        line-height: 42px;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 10px;
+        background-color: #ececec;
+    }
+    
+    .registerarea .registerarea-dl {
+        float: right;
+        font-size: 14px;
+        line-height: 42px;
+        padding-right: 30px;
+    }
+    
+    .registerarea .registerarea-dl .red {
+        color: red;
+    }
+    
+    .zhuche {
+        width: 600px;
+        margin: 50px auto;
+    }
+    
+    .zhuche li {
+        margin-bottom: 20px;
+    }
+    
+    .zhuche li .num {
+        display: inline-block;
+        width: 88px;
+        text-align: right;
+        padding-right: 1px;
+    }
+    
+    .zhuche li .inp {
+        width: 240px;
+        height: 37px;
+        border: 1px solid #ccc;
+    }
+    
+    .zhuche li .error {
+        color: red;
+    }
+    
+    .error-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        background: url(../image/error.png) no-repeat;
+        margin-bottom: 2px;
+    }
+    
+    .yes {
+        color: green;
+    }
+    
+    .yes-icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        background: url(../image/success.png) no-repeat;
+        margin-bottom: 2px;
+    }
+    
+    .safe {
+        margin-bottom: 15px;
+        padding-left: 170px;
+    }
+    
+    .safe em {
+        padding: 0 12px;
+        color: white;
+    }
+    
+    .safe .ruo {
+        background-color: red;
+    }
+    
+    .safe .zhong {
+        background-color: seagreen;
+    }
+    
+    .safe .qiang {
+        background-color: #f79100;
+    }
+    
+    .agree {
+        padding-left: 95px;
+    }
+    
+    .yh {
+        color: skyblue;
+    }
+    
+    .submit {
+        width: 200px;
+        height: 34px;
+        background-color: red;
+        color: white;
+        font-size: 14px;
+        margin: 30px 0 0 70px;
+    }
+    
+    .mod_help {
+        height: 185px;
+        border-bottom: 1px solid #ccc;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+    
+    .mod_help dl {
+        float: left;
+        width: 200px;
+    }
+    
+    .mod_help dl:last-child {
+        width: 90px;
+        text-align: center;
+    }
+    
+    .mod_help dl dt {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .mod_copyright {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .links a {
+        margin: 0 3px;
+    }
+    
+    .links {
+        margin-bottom: 15px;
+    }
+    
+    .copyright {
+        line-height: 20px;
+    }

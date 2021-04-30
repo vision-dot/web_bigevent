@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <!-- text文本框用户可以里面输入任何值 -->
+        <!-- value=""可以在打开页面文本框默认有它里面的内容 -->
+        用户名：<input type="text" value="请输入用户名" name="username" /><br />
+        <!-- 若在里面加maxlength="5"，则文本框自能输入最多5个字符 -->
+        <!-- password是密码框，用户看不见你输入的信息 -->
+        密码：<input type="password" name="pass" /><br>
+        <!-- radio是单选框 -->
+        <!-- name是表单元素的名字，而且每个表单元素必须拥有；这里radio和chechbox必须有相同名字，才可以实现多选一或多选多-->
+        性别：男<input type="radio" name="sex" value="男" checked="checked" /> 女：<input type="radio" name="sex" value="女" /><br>
+        <!-- checkbox是多选框 -->
+        爱好：篮球<input type="checkbox" checked="checked" /> 羽毛球：<input type="checkbox" /> 足球：<input type="checkbox" /><br>
+        <!-- 如果在input文本框加checked="checked",那么该文本框就会被默认选中 -->
+        <!-- 点击该按钮，可以把表单域form里面的表单元素的值提交给后台 -->
+        <input type="submit" value="免费注册"><br>
+        <!-- reset可以还原表单元素初始状态 -->
+        <input type="reset" value="重新填写"><br>
+        <input type="button" value="获取短信验证码"><br>
+        <!-- 文件域，使用上传文件用的 -->
+        上传文件：<input type="file"><br>
+        <!-- <label>标签用于绑定一个表单元素，当点击<label>标签时，浏览器就会自动将光标移到选择对应的表单元素上，增加用户体验感 -->
+        <!-- <label>标签for属性应当与相关元素id属性相同-->
+        <label for="qq">地方</label><input type="text" id="qq"><br>
+        <!-- select属于下拉列表;selected="selected"就相当于当前为下拉列表的首选-->籍贯：
+        <select>
+            <option>广东</option>
+            <option selected="selected">北京</option>
+            <option>成都</option>
+
+        </select><br>
+        <!-- roes是行，cols是每行多少字 -->总结：
+        <textarea cols="50" rows="5"> </textarea>
+    </form>
+</body>
+
+</html>

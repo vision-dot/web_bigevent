@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            display: none;
+            /* 隐藏后位置也不会占有；显示是display：block； */
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+        }
+        
+        .two {
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .three {
+            visibility: hidden;
+            /* 隐藏后位置依然存在 */
+            position: fixed;
+            left: 50%;
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+        }
+        
+        .four {
+            position: fixed;
+            left: 50%;
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+        }
+        
+        .five {
+            /* 溢不溢出的都会显示滚动条 */
+            overflow: scroll;
+            /* overflow: auto;溢出会显示滚动条，不溢出不显示滚动条 ；
+            visible不剪切内容也不添加滚动条；hidden不显示超过对象对象尺寸的内容，超出部分隐藏掉*/
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <div class="five">11111111111111111111 11111111111111111111111111111111111111111111111111111111111111111111111111111
+    </div>
+
+</body>
+
+</html>

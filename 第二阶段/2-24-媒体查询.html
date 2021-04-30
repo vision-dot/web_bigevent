@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 这句话的意思就是： 在我们屏幕上 并且 最大的宽度是 800像素 设置我们想要的样式 */
+        /* max-width 小于等于800 */
+        /* 媒体查询可以根据不同的屏幕尺寸在改变不同的样式 */
+        /* mediatype类型：1、all，用于所有类型；
+                        2、print，用于打印机和打印预览
+                        3、scree，用于电脑屏幕和平板电脑，智能手机等 */
+        /* 关键字：1、and，可以将多个媒体特性连接在一起，相当于“且”的意思
+                   2、not，排除某个媒体类型，相当于“非”的意思，可以省略
+                   3、only，指定某个特定的媒体类型，可以省略 */
+        /* 屏幕小于等于800px，颜色变成粉色 */
+        
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: pink;
+            }
+        }
+        /* 屏幕小于等于500px，颜色变成紫色 */
+        
+        @media screen and (max-width: 500px) {
+            body {
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

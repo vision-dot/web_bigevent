@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            text-align: center;
+        }
+        
+        .box a {
+            display: inline-block;
+            text-decoration: none;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            border: 1px solid #ccc;
+            color: #333;
+            background-color: #f7f7f7f;
+        }
+        
+        .box .one,
+        .box .two {
+            width: 85px;
+            border: 1px solid #ccc;
+        }
+        
+        .box .pre,
+        .box .elp {
+            border: none;
+        }
+        
+        .three {
+            width: 60px;
+            height: 30px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        
+        .four {
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#" class="one">
+            <<上一页</a>
+                <a href="#" class="pre">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#" class="elp">...</a>
+                <a href="#" class="two">下一页>></a>
+                <input type="text" class="three">
+                <input type="button" value="确定" class="four">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var jsonStr = '{"a": "Hello", "b": "world"}'
+        //把字符串转换为数据对象的过程，叫反序列化，如JSON.parse（）
+        // var obj = JSON.parse(jsonStr)
+        // console.log(obj)//{a: "Hello", b: "world"}
+
+        var obj2 = {
+                a: 'hello',
+                b: 'world',
+                c: false
+            }
+            //把数据对象转化为字符串的过程叫做序列化，如JSON.stringify()        
+        var str = JSON.stringify(obj2)
+        console.log(str) //{"a":"hello","b":"world","c":false}
+        console.log(typeof str) //string
+    </script>
+</body>
+
+</html>

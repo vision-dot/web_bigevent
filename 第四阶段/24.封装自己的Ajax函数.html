@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Data(data) {
+            var arr = []
+            for (let k in data) {
+                arr.push(k + '=' + data[k])
+            }
+            return arr.join('&') //每个值做拼接
+        }
+        var str = Data({
+            name: 'zhangsan',
+            age: 18
+        })
+        console.log(str); //name=zhangsan&age=18
+    </script>
+</body>
+
+</html>

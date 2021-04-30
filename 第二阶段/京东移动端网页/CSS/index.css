@@ -1,0 +1,186 @@
+body {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    font-family: -apple-system, Helvetica, sans-serif;
+}
+
+
+/* 点击高亮我们需要清除，设置为transparent完成透明 */
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* 在移动端浏览器默认外观在iOS上加这个属性才能给按钮和输入框自定义样式 */
+
+input {
+    -webkit-appearance: none;
+}
+
+
+/* 禁止长按页面时弹出菜单 */
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+
+/* 去除图片缝隙，图片默认会出现上下缝隙 */
+
+img {
+    vertical-align: top;
+}
+
+.search {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 44px;
+    max-width: 640px;
+    min-width: 320px;
+}
+
+.searchbox {
+    position: relative;
+    height: 30px;
+    background-color: white;
+    margin: 0px 50px;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+
+.jdlogo {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    background-color: teal;
+    background: url(../images/jdlogo.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+.jdlogo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -8px;
+    top: 0;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+}
+
+.search-btn::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/logo.png) no-repeat;
+    /* 把图片缩放 */
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+
+.jz {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background-color: blanchedalmond;
+    background: url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+    /* 二倍精灵图做法:1、在firework里面把精灵图等比例缩放为原来的一倍
+    2、之后根据大小测量坐标
+    3、注意代码里面的background-size也要改为精灵图原来宽度的一半 */
+}
+
+.search-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+}
+
+.search-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    line-height: 44px;
+    color: white;
+    font-size: 16px;
+}
+
+.hua img {
+    width: 100%;
+}
+
+.brand {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.brand img {
+    float: left;
+    width: 33.3%;
+}
+
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav a img {
+    width: 40px;
+    margin: 10px 0;
+}
+
+nav a span {
+    color: black;
+    display: block;
+    margin-top: -5px;
+}
+
+.new {
+    margin-top: 20px;
+}
+
+.new img {
+    width: 100%;
+}
+
+.new a {
+    float: left;
+    /* 不会撑开模型，原来盒子多大，最终也一直会多大，加padding和margin或者边框都不会影响 */
+    box-sizing: border-box;
+}
+
+.new a:nth-child(1) {
+    width: 50%;
+}
+
+.new a:nth-child(2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}
+
+.new a:nth-child(3) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 注意：跨行：最上面单元格为目标单元格，写合并单元格就要放在最上面那个单元格里面，
+        跨列：最左侧单元格为目标单元格，写合并单元格就要放在最左面那个单元格里面 -->
+
+<body>
+    <table cellspacing="0" width="500" height="250" border="1">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+            <!-- 把第一行第二第三个单元格合并，属于跨列合并。那么我们可以把第三个单元格删掉 -->
+            <!-- <td></td>把这行的<td>删掉</td> -->
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <!-- 把第一列第二个第三个单元格合并，属于跨行合并。那么我们可以把第一列第三个单元格删掉 -->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td></td>把第一列第三个单元格<td>删掉</td> -->
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

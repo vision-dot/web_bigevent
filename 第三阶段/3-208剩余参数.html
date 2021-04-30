@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>剩余参数</title>
+</head>
+
+<body>
+    <script>
+        // const sum = (...args) => {
+        // 	let total = 0;
+        // 	args.forEach(item => total += item);
+        // 	return total;
+        // };
+
+        // console.log(sum(10, 20));//30
+        // console.log(sum(10, 20, 30));//60
+
+
+        let ary1 = ['张三', '李四', '王五'];
+        let [s1, ...s2] = ary1; //...s2相当于一个数组
+        console.log(s1) //张三
+        console.log(s2) //["李四","王五"]
+    </script>
+</body>
+
+</html>

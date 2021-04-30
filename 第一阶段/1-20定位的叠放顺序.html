@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* z-index: 数值; 数值越大越靠上*/
+        
+        .one {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            background-color: blue;
+        }
+        
+        .two {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            width: 200px;
+            height: 200px;
+            z-index: 2;
+            background-color: pink;
+        }
+        
+        .three {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            z-index: 3;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.search {
+    display: flex;
+    position: fixed;
+    top: 0;
+    /* 把div移动屏幕中央 */
+    left: 50%;
+    /* 兼容老版本的格式 */
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /* 固定盒子应该有宽度 */
+    width: 100%;
+    min-width: 360px;
+    max-width: 540px;
+    height: 44px;
+    color: #666;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-left {
+    height: 26px;
+    border: 1px solid #ccc;
+    flex: 1;
+    margin: 8px 10px;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+.search-left::before {
+    content: "";
+    /* 给放大镜加绝对定位，不占位置，不然会给文字挤下来 */
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png) no-repeat -59px -279px;
+    background-size: 104px auto;
+}
+
+.search-right {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.search-right::before {
+    content: "";
+    display: block;
+    height: 23px;
+    width: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    /* 只写宽度就行，高度可以不用写也可以写成auto */
+    background-size: 104px auto;
+    margin: 4px auto 0;
+}
+
+
+/* 因为头部搜索模块是固定位置，是不占位置，所以要给foucs模块下移，不然它就会飘上去，被遮住 */
+
+.foucs {
+    padding-top: 44px;
+}
+
+img {
+    width: 100%;
+}
+
+.local-nav {
+    display: flex;
+    height: 64px;
+    margin: 2px 3px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 8px; */
+}
+
+.local-nav li [class^="icon"] {
+    height: 32px;
+    width: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px auto;
+}
+
+.local-nav li .icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .icon3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .icon5 {
+    background-position: 0 -128px;
+}
+
+nav {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nav-common {
+    display: flex;
+    background-color: #2eaae0;
+    height: 88px;
+}
+
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.common1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.common1 a {
+    flex: 1;
+    line-height: 44px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.common1 a:nth-child(1) {
+    border-bottom: 1px solid #fff;
+}
+
+.common1:nth-child(1) a {
+    border: 0;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+
+
+/* 前两个孩子 */
+
+.common1:nth-child(-n+2) {
+    border-right: 1px solid #fff;
+}
+
+.nav-common:nth-child(1) {
+    /* 渐变，要加私有前缀-webkit */
+    background: -webkit-radial-gradient(left, #fa5a55, #fa994d);
+}
+
+.nav-common:nth-child(2) {
+    background: -webkit-radial-gradient(left, #4b90ed, #53bced);
+}
+
+.nav-common:nth-child(3) {
+    background: -webkit-radial-gradient(left, #34c2a9, #6cd559);
+}
+
+.subnav {
+    display: flex;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.subnav li {
+    /* 里面的子孩子可以写百分比 */
+    flex: 20%;
+}
+
+.subnav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+
+.sale-box {
+    border-top: 1px solid #bbb;
+    background-color: #fff;
+    margin: 4px;
+}
+
+.sale-hd {
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-size: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            /* left左对齐；right右对齐 */
+        }
+        
+        h2 {
+            font-family: " 微软软黑";
+        }
+        
+        h3 {
+            text-decoration: underline;
+            /* line-through删除线；overline上划线 */
+        }
+        
+        p {
+            font-family: Arial, " 微软软黑", " Microsoft yahei";
+            /* 如果浏览器没有Arial字体，就会采用微软软黑，没有就下一个，以此类推 */
+        }
+        
+        .bold {
+            font-weight: 700;
+            /* 字体变粗（也可以把700换为bold；字体变细（不变）就 font-weight: 400;*/
+        }
+        
+        .qinxie {
+            font-style: italic;
+            /* 字体倾斜；font-style: normal可以让字体不倾斜; */
+        }
+        
+        a {
+            text-decoration: none;
+            /* 取消超链接下面默认的线 */
+        }
+    </style>
+    <!-- 各种字体必须用逗号隔开，如果有空格隔开的多个单词组成的字体加引号 -->
+</head>
+
+<body>
+    <h1>旅游胜地</h1>
+    <h2>阿森纳空间</h2>
+    <h3>去哪里旅游</h3>
+    <p>云南大理</p>
+    <p class="qinxie">云南大理很漂亮</p>
+    <p class="bold">云南大理很舒缓</p>
+    <p>云南大理很美丽</p>
+    <p style="color: yellow;">湛江很值得去</p>
+    <a href="#">湛江很美</a>
+</body>
+<!-- 如果想用一个font把多种属性放在一起，那么顺序只能是font： font-style font-weight font-size/heigh font-family，并且各个属性要用空格隔开
+如果其他属性不用可以不写，但是里面必需要有 font-size和font-family，否则font不起作用-->
+<!-- body {
+    font :  16px/28px(28px是行高，这两个是搭配实用) " 微软软黑" ;
+} -->
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            width: 500px;
+            background-color: olive;
+        }
+    </style>
+</head>
+
+<body>
+    <button>点击按钮可以停止倒计时</button>
+    <div></div>
+    <script>
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        var time = setTimeout(function() {
+            div.style.display = 'none';
+        }, 5000)
+        btn.addEventListener('click', function() {
+            clearTimeout(time);
+        })
+    </script>
+</body>
+
+</html>

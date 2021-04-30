@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = '<div>{{name}}今年{{ age }}岁了</div>'
+        var pattern = /{{\s*([a-zA-Z]+)\s*}}/
+            //\s*表示提取空格，两边加取消两边空格，比如{{ age }}
+
+        // 第一次匹配
+        var res1 = pattern.exec(str)
+        str = str.replace(res1[0], res1[1])
+        console.log(str) //name今年{{age}}岁了
+
+        // 第二次匹配
+        var res2 = pattern.exec(str)
+        str = str.replace(res2[0], res2[1])
+        console.log(str) //name今年age岁了
+
+        // 第三次匹配
+        var res3 = pattern.exec(str)
+        console.log(res3) //null
+    </script>
+</body>
+
+</html>

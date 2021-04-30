@@ -1,0 +1,235 @@
+.main {
+    width: 980px;
+    height: 445px;
+    margin-left: 220px;
+}
+
+.foucs {
+    float: left;
+    height: 100%;
+    width: 721px;
+    background-color: red;
+}
+
+.foucs img {
+    height: 445px;
+    width: 721px;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+.new {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.new_hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding-left: 16px;
+    line-height: 33px;
+}
+
+.new_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.new_hd a {
+    float: right;
+    padding-right: 17px;
+    line-height: 33px;
+}
+
+.new_hd a::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.new_bd {
+    height: 130px;
+    border-bottom: 1px solid #e4e4e4;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.new_bd ul li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.lifeservice {
+    /* 把超出的部分框框隐藏掉 */
+    overflow: hidden;
+    height: 210px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 256px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul .sj {
+    position: relative;
+}
+
+.lifeservice ul .sj div {
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 13px;
+    background-color: green;
+    top: 0;
+    right: 0;
+    color: white;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    height: 26px;
+    width: 20px;
+    margin-top: 13px;
+    background: url(../image/icons.png) no-repeat -19px -15px;
+}
+
+.bargin {
+    margin-top: 5px;
+}
+
+.newsflash img {
+    width: 250px;
+    height: 66px;
+}
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom .recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom .recom_bd {
+    background-color: teal;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.list {
+    float: right;
+}
+
+.list ul li {
+    float: left;
+    line-height: 30px;
+}
+
+.list ul li a {
+    margin: 0 15px;
+}
+
+.list ul li .red {
+    color: #c81623;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.content_item>div {
+    float: left;
+}
+
+.content_item .itemone {
+    width: 210px;
+    background-color: #f9f9f9;
+    height: 361px;
+    text-align: center;
+}
+
+.content_item .itemone li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+.content_item .itemone ul {
+    padding-left: 12px;
+}
+
+.content_item .itemtwo {
+    width: 329px;
+}
+
+.content_item .itemthree {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.content_item .itemfour {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.content_item .itemfive {
+    width: 219px;
+}
+
+.border-bottom {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

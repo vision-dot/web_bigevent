@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 120px;
+            height: 50px;
+            background-color: blanchedalmond;
+            margin: 10px auto;
+            /* 这个组合的意思是如果文字显示不开会自动换行,这个是默认的,不用写也行 */
+            /* white-space: normal; */
+            /* 这个组合的意思是如果文字显示不开不会自动换行，并且会强制一行显示 */
+            white-space: nowrap;
+            /* 把溢出的部分隐藏 */
+            overflow: hidden;
+            /* 文字溢出用省略号显示 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>好好学习，天天向上，好好学习，天天向上</div>
+</body>
+
+</html>

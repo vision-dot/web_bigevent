@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>箭头函数面试题</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var age = 100; //如果没有这句话,则输出indefinited
+
+        var obj = {
+            age: 20,
+            say: () => {
+                alert(this.age)
+            }
+        }
+
+        obj.say(); //100,say相当于作用在全局作用域下,所以this是指向window,window姓名
+        //又没有age属性,如果外部没有定义age属性则输出undefined
+        //箭头函数没有自己的this,而箭头函数的this指向定义箭头函数区域的this
+        //而这个this指向obj,而obj是一个对象,不能产生作用域,所以this会指向window
+    </script>
+</body>
+
+</html>

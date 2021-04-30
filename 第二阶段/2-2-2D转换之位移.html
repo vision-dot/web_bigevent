@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            /* transform: translate(x, y); */
+            /* x轴就是自左向右，y周就是自上而下 */
+            transform: translate(100px, 100px);
+            /* 如果只移动x轴，则是transform: translate(123px, 0);或是transform: translateX(123px); */
+        }
+        
+        .aa {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 如果里面是百分比，是是参考自身元素，比如这个向右移动50%，就是200*50%，向右移动100px */
+            transform: translateX(50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="aa"></div>
+</body>
+
+</html>

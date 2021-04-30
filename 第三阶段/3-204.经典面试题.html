@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>经典面试题</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let arr = [];
+
+        for (let i = 0; i < 2; i++) {
+            arr[i] = function() {
+                console.log(i);
+            }
+        }
+
+        arr[0](); //0;每次作用都要在对应的块级作用域下，使用i就是对应的函数i值
+        arr[1](); //1
+
+
+        var arr = [];
+
+        for (var i = 0; i < 2; i++) {
+            arr[i] = function() {
+                console.log(i);
+            }
+        }
+
+        arr[0](); //2；因为每个arr函数里面i是没有被定义的，所以会查找上一级，也就是for循环里面的i值，只有在i=2时退出循环，这时候函数i才会被定义
+        arr[1](); //2
+    </script>
+</body>
+
+</html>
